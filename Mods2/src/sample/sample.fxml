@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="489.0" minWidth="600.0" prefHeight="489.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane prefHeight="399.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <LineChart fx:id="chart" layoutX="12.0" layoutY="-1.0" prefHeight="400.0" prefWidth="528.0" title="F-схемы" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                            <xAxis>
+                                <CategoryAxis fx:id="m" side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="p" side="LEFT" />
+                            </yAxis>
+                        </LineChart>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="95.0" prefWidth="600.0">
+                    <children>
+                        <JFXTextField fx:id="fieldA" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="124.0" promptText="Введите а" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="462.0" />
+                        <JFXButton fx:id="button" defaultButton="true" layoutX="508.0" layoutY="20.0" onAction="#buttonPressed" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: #f563a7;" text="Вычислить" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0" />
+                        <JFXCheckBox fx:id="check1" layoutX="138.0" layoutY="18.0" text="1 уравнение" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="358.0" />
+                        <JFXCheckBox fx:id="check2" layoutX="138.0" layoutY="51.0" text="2 уравнение" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="358.0" />
+                        <JFXCheckBox fx:id="check3" layoutX="255.0" layoutY="18.0" text="3 уравнение" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="250.0" />
+                        <JFXCheckBox fx:id="check4" layoutX="255.0" layoutY="51.0" text="4 уравнение" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="250.0" />
+                        <JFXCheckBox fx:id="check5" layoutX="386.0" layoutY="18.0" text="5 уравнение" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="120.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
